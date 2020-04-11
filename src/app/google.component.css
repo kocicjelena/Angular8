@@ -1,0 +1,8 @@
+.displayed {
+float: right;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 30px; }
+

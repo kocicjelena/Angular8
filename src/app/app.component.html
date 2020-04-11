@@ -1,0 +1,23 @@
+
+  <div class="displayed">
+      <h4>Search component </h4>
+	<section>
+      <div>
+		 Search for:  <input type="text" class="form-control" [(ngModel)]="value1" id="textCI" placeholder="search" (ngModelChange)="updateQuery($event)"  >
+       <br>
+		<br>
+		<nav>
+		 <ul class="list-inline" [ngStyle]="{'display': inline}">
+              <li *ngFor="let item of itemsList">
+                <input type="radio" routerLink = {{url}} [(ngModel)]="radioSelected" name="list_name" value="{{item.value}}" (change)="onItemChange(item)"/> 
+                {{item.value}}
+                
+              </li>
+        </ul>
+        </nav>
+    
+
+     </div>
+</section>
+</div>
+<router-outlet></router-outlet>
